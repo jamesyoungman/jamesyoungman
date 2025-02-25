@@ -1,12 +1,14 @@
-# Visit https://github.com/lowlighter/metrics/blob/master/action.yml for full reference
 name: Metrics
 on:
-  # Schedule updates (each hour)
-  schedule: [{cron: "12 * * * *"}]
+  # https://docs.github.com/en/actions/writing-workflows/choosing-when-your-workflow-runs/events-that-trigger-workflows#schedule
+  # Schedule updates (12 minutes past the hour, every 6 hours)
+  schedule: [{cron: "12 3,9,15,21 * * *"}]
+
   # Lines below let you run workflow manually and on each commit
   workflow_dispatch:
   push: {branches: ["master", "main"]}
 jobs:
+  # Visit https://github.com/lowlighter/metrics/blob/master/action.yml for full reference
   github-metrics:
     runs-on: ubuntu-latest
     permissions:
