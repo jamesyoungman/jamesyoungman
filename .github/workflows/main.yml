@@ -37,7 +37,6 @@ jobs:
           plugin_introduction: no
           plugin_languages: yes
           plugin_languages_analysis_timeout: 15
-          plugin_languages_analysis_timeout_repositories: 7.5
           plugin_languages_categories: markup, programming
           plugin_languages_colors: github
           plugin_languages_details: percentage
@@ -51,5 +50,6 @@ jobs:
           plugin_notable_from: organization
           plugin_notable_types: commit
           plugin_repositories: yes
-          plugin_repositories_order: featured, pinned, starred, random
+          plugin_languages_analysis_timeout_repositories: 7.5
+          #plugin_repositories_order: featured, pinned, starred, random
           plugin_repositories_featured: TX-2/TX-2-simulator,jamesyoungman/findutils,jamesyoungman/vimvars,jamesyoungman/cssc,jamesyoungman/beebtools
