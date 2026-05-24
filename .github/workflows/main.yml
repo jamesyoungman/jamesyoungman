@@ -52,3 +52,4 @@ jobs:
           plugin_notable_types: commit
           plugin_repositories: yes
           plugin_repositories_order: featured, pinned, starred, random
+          plugin_repositories_featured: TX-2/TX-2-simulator,jamesyoungman/findutils,jamesyoungman/vimvars,jamesyoungman/cssc,jamesyoungman/beebtools
